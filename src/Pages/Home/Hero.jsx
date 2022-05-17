@@ -2,8 +2,6 @@ import React from "react";
 import chair from "../../assets/images/chair.png";
 import heroBg from "../../assets/images/bg.png";
 
-console.log(heroBg);
-
 const Hero = () => {
   return (
     <div
