@@ -4,11 +4,11 @@ import PrimaryButton from "../Shared/PrimaryButton";
 
 const Terms = () => {
   return (
-    <div class="card lg:card-side mb-28 lg:w-2/3 lg:mx-auto">
+    <div className="card lg:card-side mb-28 lg:w-2/3 lg:mx-auto">
       <img className="w-[460px]" src={treatment} alt="Album" />
 
-      <div class="card-body my-auto lg:mx-7">
-        <h2 class="card-title text-4xl text-center">
+      <div className="card-body my-auto lg:mx-7">
+        <h2 className="card-title text-4xl text-center">
           Exceptional Dental Care, on Your Terms
         </h2>
         <p>
