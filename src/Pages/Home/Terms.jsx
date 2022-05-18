@@ -1,9 +1,10 @@
 import React from "react";
 import treatment from "../../assets/images/treatment.png";
+import PrimaryButton from "../Shared/PrimaryButton";
 
 const Terms = () => {
   return (
-    <div class="card lg:card-side mb-8 lg:w-2/3 lg:mx-auto">
+    <div class="card lg:card-side mb-28 lg:w-2/3 lg:mx-auto">
       <img className="w-[460px]" src={treatment} alt="Album" />
 
       <div class="card-body my-auto lg:mx-7">
@@ -18,6 +19,9 @@ const Terms = () => {
           look like readable English. Many desktop publishing packages and web
           page
         </p>
+        <div className="my-5">
+          <PrimaryButton>Get Started</PrimaryButton>
+        </div>
       </div>
     </div>
   );

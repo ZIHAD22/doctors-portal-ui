@@ -1,6 +1,7 @@
 import React from "react";
 import chair from "../../assets/images/chair.png";
 import heroBg from "../../assets/images/bg.png";
+import PrimaryButton from "../Shared/PrimaryButton";
 
 const Hero = () => {
   return (
@@ -23,9 +24,7 @@ const Hero = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn border-0 bg-gradient-to-r from-secondary to-primary text-white font-bold">
-            Get Started
-          </button>
+          <PrimaryButton>Get Started</PrimaryButton>
         </div>
       </div>
     </div>
