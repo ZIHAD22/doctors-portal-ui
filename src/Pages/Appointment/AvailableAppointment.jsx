@@ -9,7 +9,7 @@ const AvailableAppointment = ({ date }) => {
   const [teretment, setTreatment] = useState({});
 
   useEffect(() => {
-    axios.get("services.json").then(({ data: appointmentService }) => {
+    axios.get("services").then(({ data: appointmentService }) => {
       setServices(appointmentService);
     });
   }, []);
@@ -18,7 +18,7 @@ const AvailableAppointment = ({ date }) => {
       <h4 className="text-xl text-secondary text-center text-bold mb-5">
         Available Appointments on {format(date, "PP")}
       </h4>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1  lg:grid-cols-3 gap-5">
         {services.map((service) => (
           <Services
             key={service._id}

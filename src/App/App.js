@@ -5,6 +5,7 @@ import Footer from '../Pages/Shared/Footer'
 import NavBar from '../Pages/Shared/NavBar'
 import 'react-day-picker/dist/style.css'
 import './App.css'
+import SignUp from '../Pages/SignIn/SignIn'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/appointment" element={<Appointment />} />
+        <Route path="/signUp" element={<SignUp />} />
       </Routes>
     </div>
   )

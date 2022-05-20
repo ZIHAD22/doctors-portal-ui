@@ -1,8 +1,19 @@
 import axios from 'axios'
+
+let selectedBaseURL
+
+if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+  selectedBaseURL = process.env.REACT_APP_DEV_API_URL
+} else {
+  selectedBaseURL = process.env.REACT_APP_PRO_API_URL
+}
+
+console.log(selectedBaseURL)
+
 // Add a request interceptor
 axios.interceptors.request.use(
   function (config) {
-    // config.baseURL = 'https://tranquil-anchorage-25651.herokuapp.com'
+    config.baseURL = selectedBaseURL
     return config
   },
   function (error) {
